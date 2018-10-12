@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <!--<link href="Css/masterCss.css" rel="stylesheet" type="text/css">  -->
+</head>
+<body>
+    <form id="form" runat="server" class="newStyle1">
+        <!-- update time-->
+        <asp:ScriptManager ID="ScriptManager1" runat="server" />
+        <div>
+            <asp:Timer ID="Timer1" runat="server" Enabled="true" Interval="1000" OnTick="Timer1_Tick">
+            </asp:Timer>
+        </div>
+        <!-- Header -->
+        <div class="header">
+            <div class="headerContents">
+                <ul>
+                    <li>La Liga</li>
+                    <li><a href="Config.aspx">THEMES</a></li>
+                </ul>
+                <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                    <Triggers>
+                        <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="Tick" />
+                    </Triggers>
+                    <ContentTemplate>
+                        <asp:Label ID="LblDate" runat="server" Text="Date"></asp:Label>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+                    <asp:LoginView ID="LoginView1" runat="server">
+                        <AnonymousTemplate>
+                            <asp:LoginStatus ID="LoginStatus1" runat="server" Height="33px" LoginImageUrl="~/images/login.jpg" Width="44px" />
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            Hello,<asp:LoginName ID="LoginName1" runat="server" />
+                            <asp:LoginStatus ID="LoginStatus2" runat="server" Height="33px" />
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                <a href="https://www.emirates.com" target="_blank">
+                    <img id="headerImg1" src="images/emirates.jpg" /></a>
+                <a href="https://www.adidas.ca" target="_blank">
+                    <img id="headerImg2" src="images/adidas.jpg" /></a>
+            </div>
+        </div>
+        <!--Menu-->
+        <div class="menu">
+            <asp:SiteMapDataSource ID="SiteMapData" runat="server" ShowStartingNode="false" />
+            <asp:Menu ID="Menu" runat="server" DataSourceID="SiteMapData" Orientation="Horizontal" ForeColor="White">
+            </asp:Menu>
+        </div>
+        <div class="banner">
+            <img src="images/banner.jpg" style="width: 1250px;" />
+        </div>
+        <!--Contents-->
+        <div class="contents">
+            <asp:ContentPlaceHolder ID="contents" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!--Footer-->
+        <div class="footer">
+            &copy; BARBARA HOUNKPE 300769037 COMP-229
+        </div>
+    </form>
+</body>
+</html>

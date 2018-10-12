@@ -1,0 +1,295 @@
+﻿.header {
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 35px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.headerContents {
+    width: 1250px;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+}
+
+.header ul {
+    float: left;
+    clear: both;
+    height: 35px;
+    margin: 0px 0px 0px 0px;
+    padding-left: 0px;
+}
+.contents label{
+    Font-Size:x-large;
+}
+body {
+    min-height :500px;
+    background-image: url('../../images/backgroung pic.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+
+.header li {
+    list-style-type: none;
+    display: inline;
+    border-right: 1px solid #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px 20px;
+    text-decoration: none;
+    line-height: 35px;
+}
+
+#headerImg1 {
+    float: right;
+}
+
+#headerImg2 {
+    float: right;
+    margin-right: 15px;
+}
+
+.menu {
+    font-family: 'Lucida Calligraphy';
+    background-color: transparent;
+    font-weight: bold;
+    width: 550px;
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+}
+
+.banner {
+    width: 1250px;
+    height: 305px;
+    margin: auto;
+    margin-top: 1px;
+}
+
+    .banner img {
+        border-radius: 5px 5px 5px 5px;
+    }
+
+.menu li {
+    padding: 0px 20px 0px 0px;
+}
+
+.contents {
+    font-weight: bold;
+    width: 1230px;
+    background-color: antiquewhite;
+    opacity: 0.7;
+    color: black;
+    margin: auto;
+    text-align: justify;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 0px;
+}
+
+.footer {
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    margin-top: 5px;
+}
+
+#UpdatePanel2 {
+    float: left;
+    width: 600px;
+    padding: 8px 1px 1px 20px;
+}
+.config {
+    width: 125px;
+    margin: auto;
+    padding-bottom: 75px;
+}
+
+.contents h1 {
+    text-align: center;
+}
+
+.headerContents a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+#Menu a:hover {
+        text-decoration: underline;
+        color: silver;
+        font-style: italic;
+        Font-Size: large;
+    }
+#Menu a.static.selected {
+    color: Wheat;
+    text-decoration: none;
+}
+#contents_ValidationSummary1{
+    margin:auto;
+    padding-left: 125px;
+}
+#contents_ValidationSummary2{
+    margin:auto;
+    padding-left: 125px;
+}
+
+/*New codes for assign 3*/
+.DisplayClubs{
+    padding-top:15px;
+}
+#contents_ClubView{
+    width:auto;
+    margin:auto;
+}
+#contents_ClubView td{
+    font-size:xx-large;
+    text-align: center;
+    padding-left:15px;
+    padding-right:15px;
+}
+#contents_ClubView th{
+    font-size:xx-large;
+    text-align: center;
+    padding-left:15px;
+    padding-right:15px;
+}
+#contents_DetailsView {
+    font-size:xx-large;
+    width:auto;
+    margin:auto;
+}
+#contents_DetailsView td{
+    font-size:xx-large;
+    text-align: center;
+    padding-left:15px;
+    padding-right:15px;
+}
+.Add td{
+    align-content:center;
+}
+#contents_ScheduleTable th{
+    font-size:xx-large;
+    text-align: center;
+    padding-left:15px;
+    padding-right:15px;
+}
+#contents_ScheduleTable td{
+    font-size:xx-large;
+    text-align: center;
+    padding-left:15px;
+    padding-right:15px;
+}
+#contents_ScheduleTable{
+    width:auto;
+    margin:auto;
+}
+#contents_SchduleView{
+    width:auto;
+    margin:auto;
+}
+#contents_SchduleView td{
+    font-size:xx-large;
+    text-align: center;
+    padding-left:15px;
+    padding-right:15px;
+}
+#contents_SchduleView th{
+    font-size:xx-large;
+    text-align: center;
+    padding-left:15px;
+    padding-right:15px;
+}
+/*New codes for assign 4*/
+#contents_Login1{
+    width:auto;
+    margin:auto;
+}
+#contents_Login1 td{
+    font-size:xx-large;
+    text-align: center;
+    padding-left:15px;
+    padding-right:15px;
+}
+#contents_Login1 th {
+    font-size: xx-large;
+    text-align: center;
+    padding-left: 15px;
+}
+#contents_Login1_LoginButton{
+    font-size: x-large;
+    text-align: center;
+}
+#contents_Login1_UserName{
+    font-size: x-large;
+}
+#contents_Login1_Password{
+    font-size: x-large;
+}
+#contents_Login1_RememberMe{  
+    width: 20px;
+    height: 20px;
+    padding-top: 1px;
+    margin-top: 5px;
+    border-bottom-width: 0px;
+    margin-bottom: 0px;
+}
+#contents_PlayerList{
+    width:auto;
+    margin:auto;
+}
+#contents_PlayerList td{
+    font-size:xx-large;
+    text-align: center;
+    padding-left:15px;
+    padding-right:15px;
+}
+#contents_PlayerList th{
+    font-size:xx-large;
+    text-align: center;
+    padding-left:15px;
+    padding-right:15px;
+}
+/*Assign 5 code*/
+#contents_CreateUserWizard1{
+    width:auto;
+    margin:auto;
+}
+#contents_CreateUserWizard1 td{
+    font-size:xx-large;
+    text-align: center;
+    padding-left:15px;
+    padding-right:15px;
+}
+#contents_CreateUserWizard1 th {
+    font-size: xx-large;
+    text-align: center;
+    padding-left: 15px;
+}
+#contents_CreateUserWizard1___CustomNav0_StepNextButtonButton{
+    font-size: x-large;
+    text-align: center;
+}
+#contents_CreateUserWizard1_CreateUserStepContainer_UserName{
+    font-size: x-large;
+}
+#contents_CreateUserWizard1_CreateUserStepContainer_Password{
+    font-size: x-large;
+}
+#contents_CreateUserWizard1_CreateUserStepContainer_ConfirmPassword{
+    font-size: x-large;
+}
+#contents_CreateUserWizard1_CreateUserStepContainer_Email{
+    font-size: x-large;
+}
+#contents_CreateUserWizard1_CreateUserStepContainer_Question{
+    font-size: x-large;
+}
+#contents_CreateUserWizard1_CreateUserStepContainer_Answer{
+    font-size: x-large;
+}
